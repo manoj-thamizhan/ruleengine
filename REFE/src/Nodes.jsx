@@ -89,7 +89,7 @@ export const SetNode = ({ id, data }) => {
 
       {err && <div style={{ color: 'crimson', fontSize: 12, marginTop: 6 }}>{err}</div>}
 
-      <Handle type="source" position={Position.Bottom} />
+      <Handle type="source" position={Position.Right} />
     </div>
   )
 }
@@ -194,8 +194,8 @@ const apply = useCallback(() => {
       />
 
       {err && <div style={{ color: 'crimson', fontSize: 12 }}>{err}</div>}
-      <Handle type="target" position={Position.Top} />
-      <Handle type="source" position={Position.Bottom} />
+      <Handle type="target" position={Position.Left} />
+      <Handle type="source" position={Position.Right} />
     </div>
   )
 }
